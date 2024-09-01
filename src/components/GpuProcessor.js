@@ -34,7 +34,7 @@ const GpuProcessor = ({ image }) => {
 
       // Processing using GPU.js
       const gpu = new GPU();
-      const processImage = gpu
+      const processImage = gpu``
         .createKernel(function (imageData) {
           const pixel = imageData[this.thread.y][this.thread.x];
           const avg = (pixel[0] + pixel[1] + pixel[2]) / 3;
